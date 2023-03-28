@@ -13,24 +13,24 @@ body {
   scroll-behavior: smooth;
 }
 
- /* width */
- ::-webkit-scrollbar {
+/* width */
+::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 body {
@@ -83,9 +83,22 @@ li {
   line-height: 1.66667;
 }
 
+.heading-item {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: var(--color-heading);
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
 /* NAV */
 body {
-  height: 1000px;
+  height: 10000px;
 }
 
 nav {
@@ -94,7 +107,7 @@ nav {
   background: #10375c;
   position: sticky;
   top: -18px;
-  z-index: 1;
+  z-index: 10;
 }
 
 nav .nav,
@@ -116,7 +129,7 @@ nav .nav,
   color: #c9d2da;
 }
 .nav .navigation .navigation__item a:hover,
-.nav .nav--cta a:first-child:hover  {
+.nav .nav--cta a:first-child:hover {
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.6);
   color: #ffffff;
 }
@@ -137,7 +150,6 @@ nav .nav,
   position: relative;
 }
 
-
 .nav .nav--cta {
   display: flex;
   align-items: center;
@@ -150,8 +162,6 @@ nav .nav,
   line-height: 1.75;
   color: #c9d2da;
 }
-
-
 
 .nav .nav--cta .btn {
   width: 104px;
@@ -230,3 +240,150 @@ header .header-intro .header__more-info span {
   border-radius: 0px 6px 6px 0px;
   opacity: 0.8;
 }
+
+/* SERVICES */
+.services {
+  padding-top: 170px;
+}
+
+.services .services-content .heading-item {
+  text-align: center;
+}
+
+.services .services-content .services-desc {
+  padding-top: 18px;
+  width: 468px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*SERVICES IMG */
+.services .services-content .services-info {
+  padding-top: 70px;
+}
+
+.services-content .services-info > figure img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+}
+
+/* SERVICES INFORMATION */
+.services-content .services-info {
+  display: flex;
+  gap: 130px;
+}
+
+.services-content .services-info .services-info__item {
+  padding-top: 35px;
+}
+
+.services-content .services-info .services__card {
+  padding: 21px 0 0 22px;
+  background: #fff;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.services-content .services-info .services__card:hover {
+  box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.services-info .services-info__item .services-info__item--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  color: var(--color-heading);
+  background: #eff6fd;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+
+.services-info .services__card:hover .services-info__item--img {
+  color: #fff;
+  background: #2e80ce;
+}
+
+.services-info .services-info__item .add-info__heading {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.277778;
+  color: var(--color-heading);
+}
+
+.services-info .services-info__item .add-info .desc {
+  width: 351px;
+  padding-top: 8px;
+}
+
+.services-info .services-info__item .btn {
+  margin-top: 55px;
+}
+
+/* HOW IT WORK */
+.hiw {
+  margin-top: 170px;
+  padding: 100px 0;
+  background: #f7fbff;
+}
+
+.hiw .hiw-content .hiw-desc {
+  padding-top: 18px;
+  width: 468px;
+}
+
+/* HOW IT WORK CARD ITEM */
+.hiw-cards {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hiw-cards__item {
+  width: 370px;
+  background: #eaf6ff;
+  border-radius: 4px;
+}
+
+.hiw-cards__item {
+  padding: 43px 42px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 16px solid #eaf6ff;
+}
+
+.hiw-cards__item:hover {
+  border-color: #2E80CE;
+  transform: translateY(-16px);
+  transition: 0.2s;
+  transition-timing-function: linear;
+}
+
+.hiw-cards__item .hiw-cards__heading {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 1.3846;
+  color: var(--color-heading);
+}
+
+.hiw-cards__item .hiw__more-info a {
+  text-decoration: none;
+  color: #2e80ce;
+
+}
+
+.hiw-cards__item .hiw__more-info {
+  padding-top: 18px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
