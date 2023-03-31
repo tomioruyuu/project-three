@@ -59,6 +59,10 @@ body {
   color: #ffffff;
 }
 
+.btn:hover {
+  opacity: .8;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -111,6 +115,7 @@ img {
   cursor: pointer;
   color: #fff;
   background: #2e80ce;
+  transition: .25s;
 }
 
 /* NAV */
@@ -463,19 +468,25 @@ header .header-intro .header__more-info span {
 }
 
 .team-content .team-card figure {
-  position: relative;
   width: 270px;
-  height: 318px;
   background: #eaf6ff;
   border-radius: 6px;
 }
 
+.team-content .team-card figure:hover img {
+  transform: scale(1.1);
+}
+
 .team-content .team-card figure img {
-  position: absolute;
+  padding-top: 28px;
+  display: block;
   bottom: 0;
-  width: 262px;
+  max-width: 262px;
   height: 290px;
   border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: .25s;
 }
 
 .team-content .team-card figcaption .name {
